@@ -1,8 +1,9 @@
         html,
         body {
-            margin: 0;    
+            margin: 0px;    
             font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
+            padding: 0px;
         }
 
         .base-page-container {
@@ -154,19 +155,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 80px 0px;
+            padding: 0px 0px;
             background-color: rgb(235, 240, 241);
+            height: 93vh;
+            margin: 0px;
         }
         div.base-card {
             width: 80%;
-            height:60vh;
-            border-radius: 16px;
+            height:60%;
+            border-radius: 10px;
             padding: 25px 0px 50px 0px;
             border: 1px solid #00000033;
             box-shadow: 0px 0px 20px #00000040;
             display: flex;
             justify-content: left;
             background-color: white;
+            margin: 0px;
         }
         div.left-side {
             padding: 0px 50px;
@@ -219,9 +223,10 @@
         }
         a.contact-anchor {
             background-color: black;
-            padding: 5px 0px;
+            padding: 8px 0px;
             color: white;
             border-radius: 20px;
+            font-weight: 500;
         }
         a.contact-anchor p {
             padding-left: 27px;
@@ -257,6 +262,7 @@
             background-color: inherit;
             font-size: medium;
             cursor: pointer;
+            color: black;
         }
         p.cv-text:hover {
             color: rgb(80, 79, 79);
@@ -290,7 +296,7 @@
             padding: 10px;
         }
         .social-icons {
-            width: 30px;
+            width: 35px;
         }
         .social-icons:hover {
             transform: scale(1.03);
@@ -303,10 +309,6 @@
             width: 100%;
         }
         div.image-container {
-            /* margin-top: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 5px; */
             box-shadow: 0px 0px 20px #00000040;
             border-radius: 5px;
             text-align: center;
@@ -314,7 +316,7 @@
         }
         div.image-container img {
             width: 99%; 
-            height: 300px; 
+            height: 280px; 
             border-radius: 5px;
             border: 1px solid #00000033;
             border-bottom-left-radius: 0px;
@@ -322,11 +324,11 @@
             object-fit: cover;
         }
         div.image-container h2 {
-            margin: 10px 0px 0px 0px;
+            margin: 5px 0px 0px 0px;
         }
         div.image-container p {
             margin-top: 0px;
-            font-size:medium;
+            font-size: medium;
         }
 
       /* -- contact, cv, image end --  */
