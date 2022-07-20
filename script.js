@@ -1,8 +1,3 @@
-
-
-// all those above will work inside the function
-
-// email address
   // get data from from :
 
 function submitForm() {
@@ -25,14 +20,6 @@ function submitForm() {
   // message = message.value;
 
   // using object to store values :
-
-  // let dataObject = {
-  //   name: name,
-  //   email: email,
-  //   phoneNumber: phone,
-  //   subject: subject,
-  //   message: message,
-  // };
 
   
   let dataObject = {
