@@ -44,9 +44,9 @@ function submitForm() {
     return alert("subject must be filled in...")
   } else if (message == "") {
     return alert("message must be filled in...")
-  } else (
+  } else {
     alert("opening mail...")
-  )
+  }
 
   const a = document.createElement('a');
 
