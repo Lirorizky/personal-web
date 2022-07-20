@@ -1,5 +1,3 @@
-  // get data from from :
-
 function submitForm() {
 
   const emailReceiver = "liro.zke@gmail.com";
@@ -30,7 +28,7 @@ function submitForm() {
     message: message,
   };
 
-  // console.log(dataObject);
+  // console.log(dataObject); logging
 
   // validation value 
 
