@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Projects</title>
+    <title>Project List</title>
 
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -43,12 +42,12 @@
     <div class="base-page-container">
       <div class="align-center">
         <h3>ADD PROJECT</h3>
-        <form action="" method="" class="contact-form">
+        <form class="contact-form" onsubmit="addProject(event)">
           <div>
             <label for="name">Project Name :</label>
             <input
               type="text"
-              id="name"
+              id="project-name"
               placeholder=""
               required
               class="project-input"
@@ -60,14 +59,19 @@
               <label for="start-date">Start Date :</label>
               <input
                 type="date"
-                id="start-date"
+                id="project-start-date"
                 required
                 class="project-input"
               />
             </div>
             <div class="right-date">
               <label for="end-date">End Date :</label>
-              <input type="date" id="end-date" required class="project-input" />
+              <input
+                type="date"
+                id="project-end-date"
+                required
+                class="project-input"
+              />
             </div>
           </div>
 
@@ -76,7 +80,7 @@
               >Description :</label
             >
             <textarea
-              id="description"
+              id="project-description"
               rows="10"
               cols="10"
               placeholder=""
@@ -130,21 +134,17 @@
             </div>
           </div>
           <div>
-            <label for="upload-image" class="input-img">
+            <label for="project-upload-image" class="input-img">
               <p>
                 <span>Choose</span>
               </p>
-              <!-- <img src="./assets/icons/paperclip.png" /> -->
+              <img src="./assets/icons/paperclip.png" />
             </label>
-            <input type="file" id="upload-image" hidden />
+            <input type="file" id="project-upload-image" hidden />
           </div>
 
           <div class="btn-container">
-            <a href="#">
-              <button type="submit" class="form-btn" onClick="submitForm()">
-                Submit
-              </button>
-            </a>
+            <button type="submit" class="form-btn">Add</button>
           </div>
         </form>
       </div>
@@ -152,9 +152,45 @@
     <!-- project form end -->
     <section class="base-page-container-2">
       <h3>MY PROJECT</h3>
-      <div class="project-showcase">
-        <div class="project-card"></div>
+      <div class="project-showcase" id="project-showcase">
+        <div class="project-card">
+          <a href="./project-detail.html" class="detail-link">
+            <div class="project-card-info">
+              <div class="project-card-img">
+                <img src="./assets/images/holding_phone.jpg" />
+              </div>
+              <div class="project-card-header">
+                <p>Dumbways Mobile App - 2022</p>
+              </div>
+              <div class="project-card-duration">
+                <p>Duration : 3 Months</p>
+              </div>
+              <div class="project-card-desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat corporis magni suscipit libero exercitationem!
+                  Aperiam
+                </p>
+              </div>
+              <div class="project-card-tech">
+                <img src="./assets/icons/playstore-color.png" alt="" />
+                <img src="./assets/icons/android-color.png" alt="" />
+                <img src="./assets/icons/javacolor.png" alt="" />
+              </div>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="edit-btn">
+                <button type="button">edit</button>
+              </a>
+              <a href="#" class="delete-btn">
+                <button type="button">delete</button>
+              </a>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
+
+    <script src="./project-form.js"></script>
   </body>
 </html>
