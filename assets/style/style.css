@@ -55,7 +55,7 @@
             text-decoration: none;
             color: white;
             padding: 5px 15px;
-            border-radius: 10px;
+            border-radius: 20px;
             font-weight: 500;
         }
         .right-nav a:hover {
@@ -534,11 +534,15 @@
         .edit-btn {
             margin: 0px 10px 10px 10px;
         }
+        .edit-btn button {
+            border-radius: 20px;
+        }
         .delete-btn {
             margin: 0px 10px 10px 0px;
         }
         .project-card-actions .delete-btn button{
             background-color: rgb(200, 35, 51);
+            border-radius: 20px;
         }
 
         /* container 2 show project end */
